@@ -8,7 +8,7 @@ import javax.ejb.Stateless;
 import mx.com.vargas.sga.domain.Persona;
 
 @Stateless
-public class PersonaServiceRemoteImpl implements PersonaServiceRemote {
+public class PersonaServiceRemoteImpl implements PersonaServiceRemote,PersonaService {
 
 	public List<Persona> listarPersonas() {
 		List<Persona> personas = new ArrayList<Persona>();
